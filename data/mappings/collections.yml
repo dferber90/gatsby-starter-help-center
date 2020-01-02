@@ -1,0 +1,44 @@
+# Collections and articles are shown in the same order as defined here
+# See this for a full-blown example of a collection
+# - id: "slug-of-the-collection"
+#   title: "The Collection Title"
+#   description: "The collection's description"
+#   # see src/utils/icons.js for a list of all possible icons
+#   icon: "FaBook"
+#   # These are the "pinned" articles at the top of a collection
+#   articles:
+#     # All articles must be in the "../../content/articles" folder
+#     - file: ../../content/articles/first-article/index.md
+#     - file: ../../content/articles/second-article/index.md
+#   sections:
+#     - id: used-as-the-hashtag-of-the-land-animals-section
+#       title: "Land animals"
+#       articles:
+#         - file: ../../content/articles/lion/index.md
+#         - file: ../../content/articles/cat/index.md
+#     - id: used-as-the-hashtag-of-the-sea-animals-section
+#       title: "Sea animals"
+#       articles:
+#         - file: ../../content/articles/dolphins/index.md
+#         - file: ../../content/articles/whales/index.md
+
+- id: introduction
+  title: Introduction
+  description: Brief overview of the free help center
+  icon: "FaRegHandPeace"
+  articles:
+    - file: ../../content/articles/welcome/index.md
+  sections:
+    - id: setup
+      title: Setup
+      articles:
+        - file: ../../content/articles/setup/index.md
+        - file: ../../content/articles/edit-content/index.md
+        - file: ../../content/articles/customizing/index.md
+        - file: ../../content/articles/deploy/index.md
+- id: features
+  title: Features
+  description: Everything the Free Help Center offers out of the box
+  icon: "FaBox"
+  articles:
+    - file: ../../content/articles/welcome/index.md
