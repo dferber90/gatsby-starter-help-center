@@ -1,9 +1,9 @@
 ---
-title: Use your own icons and colors
-date: 2020-01-02T19:05:27.711Z
+title: Editing an existing article
+date: 2020-01-03T14:04:25.066Z
 author: dferber
 modifiedDate: null
-description: "Make it yours. Use your own fonts, icons and colors."
+description: "Learn how to edit your Help Center's content."
 ---
 
 _This tutorial will show you how to set up your own help center. At the end, you will have the help center running locally. The next section then shows how to edit the content. And the final step shows how to deploy the help center to the internet, so that anyone can access it._

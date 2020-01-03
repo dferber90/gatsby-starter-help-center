@@ -1,5 +1,5 @@
 /** @jsx jsx */
-/* eslint-disable jsx-a11y/no-autofocus */
+/* eslint-disable jsx-a11y/no-autofocus, react/jsx-no-target-blank */
 import { jsx } from "theme-ui"
 import React from "react"
 import { Link, useStaticQuery, graphql, navigate } from "gatsby"
@@ -308,8 +308,18 @@ class Layout extends React.Component {
           <div sx={{ mt: 2 }}>
             Built with
             {` `}
+            {/*
+              PLEASE DO NOT REMOVE THIS LINK.
+
+              A lot of unpaid time is spent on making and maintaining the 
+              center. Nothing is expected in return. Keeping this link here
+              is the only small thing asked in return. So please don't remove it.
+
+              You are amazing for keeping it here, thank you.
+            */}
             <a
               href="https://help.dferber.de"
+              target="_blank"
               sx={{
                 color: "footerTextColor",
                 textDecoration: "underline",

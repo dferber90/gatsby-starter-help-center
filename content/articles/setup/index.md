@@ -12,7 +12,7 @@ _This tutorial will show you how to set up your own help center. At the end, you
 
 Install the [`gatsby-cli`](https://www.npmjs.com/package/gatsby-cli) if you don't have it already.
 
-```sh
+```shell
 npm install --global gatsby-cli
 ```
 
@@ -22,6 +22,6 @@ If you don't have `npm` either, install [node.js](https://nodejs.org/en/) first.
 
 Create a new Gatsby site, using `gatsby-starter-help-center` as the template.
 
-```sh
+```shell
 gatsby new help-center dferber90/gatsby-starter-help-center
 ```

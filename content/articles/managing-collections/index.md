@@ -1,6 +1,6 @@
 ---
-title: How to edit the content
-date: 2020-01-02T19:05:27.711Z
+title: Managing the collections and their sections
+date: 2020-01-03T14:04:25.066Z
 author: dferber
 modifiedDate: null
 description: "Learn how to edit your Help Center's content."
@@ -12,7 +12,7 @@ _This tutorial will show you how to set up your own help center. At the end, you
 
 Install the [`gatsby-cli`](https://www.npmjs.com/package/gatsby-cli) if you don't have it already.
 
-```sh
+```shell
 npm install --global gatsby-cli
 ```
 
@@ -22,6 +22,6 @@ If you don't have `npm` either, install [node.js](https://nodejs.org/en/) first.
 
 Create a new Gatsby site, using `gatsby-starter-help-center` as the template.
 
-```sh
+```shell
 gatsby new help-center https://www.github.com/dferber90/gatsby-starter-help-center
 ```

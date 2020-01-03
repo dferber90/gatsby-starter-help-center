@@ -85,6 +85,8 @@ class CollectionTemplate extends React.Component {
     const collection = this.props.data.collection
     const articles = concatArticles(collection)
 
+    console.log(articles)
+
     const icon = collection.icon
       ? jsx(
           icons[collection.icon],

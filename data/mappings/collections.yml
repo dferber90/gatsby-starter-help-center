@@ -28,17 +28,48 @@
   icon: "FaRegHandPeace"
   articles:
     - file: ../../content/articles/welcome/index.md
+
+- id: features-and-nonfeatures
+  title: Features and Non-Features
+  description: Everything the Free Help Center offers out of the box
+  icon: "FaBox"
+  sections:
+    - id: features
+      title: Features
+      articles:
+        - file: ../../content/articles/features/index.md
+    - id: nonfeatures
+      title: Non-Features
+      articles:
+        - file: ../../content/articles/comparison-to-saas/index.md
+
+- id: usage
+  title: Usage
+  description: Setup and usage guides for the free help center
+  icon: "FaRegListAlt"
   sections:
     - id: setup
       title: Setup
       articles:
         - file: ../../content/articles/setup/index.md
-        - file: ../../content/articles/edit-content/index.md
+    - id: editing-content
+      title: Editing content
+      articles:
+        - file: ../../content/articles/create-article/index.md
+        - file: ../../content/articles/edit-article/index.md
+        - file: ../../content/articles/managing-collections/index.md
+    - id: customizing
+      title: Customizing
+      articles:
         - file: ../../content/articles/customizing/index.md
+    - id: deploying
+      title: Deploying
+      articles:
         - file: ../../content/articles/deploy/index.md
-- id: features
-  title: Features
-  description: Everything the Free Help Center offers out of the box
-  icon: "FaBox"
+
+- id: giving-back
+  title: Giving back
+  description: 'Options in case you want to say "thank you"'
+  icon: "FaPeopleCarry"
   articles:
-    - file: ../../content/articles/welcome/index.md
+    - file: ../../content/articles/giving-back/index.md
