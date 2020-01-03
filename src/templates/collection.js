@@ -173,16 +173,16 @@ class CollectionTemplate extends React.Component {
                 {(() => {
                   switch (articles.length) {
                     case 0:
-                      return this.props.data.site.siteMetadata
+                      return this.props.data.site.siteMetadata.texts
                         .articlesInCollectionZeroText
                     case 1:
-                      return this.props.data.site.siteMetadata
+                      return this.props.data.site.siteMetadata.texts
                         .articlesInCollectionOneText
                     case 2:
-                      return this.props.data.site.siteMetadata
+                      return this.props.data.site.siteMetadata.texts
                         .articlesInCollectionTwoText
                     default:
-                      return this.props.data.site.siteMetadata
+                      return this.props.data.site.siteMetadata.texts
                         .articlesInCollectionMultipleText
                   }
                 })()}
