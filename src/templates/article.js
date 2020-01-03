@@ -103,20 +103,8 @@ class ArticleTemplate extends React.Component {
           }}
         >
           <header sx={{ mb: 3 }}>
-            <h2
-              sx={{
-                marginTop: rhythm(1 / 4),
-                marginBottom: 1,
-              }}
-            >
-              {article.frontmatter.title}
-            </h2>
-            <p
-              sx={{
-                my: 3,
-                color: "articleDescriptionColor",
-              }}
-            >
+            <h2 sx={{ mt: 4, mb: 1 }}>{article.frontmatter.title}</h2>
+            <p sx={{ my: 3, color: "articleDescriptionColor" }}>
               {article.frontmatter.description}
             </p>
             {article.frontmatter.author && (
