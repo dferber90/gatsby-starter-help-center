@@ -85,8 +85,6 @@ class CollectionTemplate extends React.Component {
     const collection = this.props.data.collection
     const articles = concatArticles(collection)
 
-    console.log(articles)
-
     const icon = collection.icon
       ? jsx(
           icons[collection.icon],
@@ -110,7 +108,7 @@ class CollectionTemplate extends React.Component {
               },
             }}
           >
-            {this.props.data.site.siteMetadata.allCollectionsText}
+            {this.props.data.site.siteMetadata.texts.allCollectionsText}
           </Link>{" "}
           <span sx={{ color: "breadcrumbTextColor", fontSize: 1 }}>
             &rsaquo;
@@ -202,10 +200,12 @@ class CollectionTemplate extends React.Component {
                 !articleNode ||
                 !articleNode.file ||
                 !articleNode.file.childMarkdownRemark
-              )
+              ) {
                 return null
+              }
 
               const article = articleNode.file.childMarkdownRemark
+              if (!article) return null
               return (
                 <li key={article.fields.slug} sx={{ my: 0, py: 0 }}>
                   <Card
@@ -222,7 +222,9 @@ class CollectionTemplate extends React.Component {
           {Array.isArray(collection.sections) &&
             collection.sections.map(section => {
               const articlesOfSection = Array.isArray(section.articles)
-                ? section.articles.map(({ file }) => file.childMarkdownRemark)
+                ? section.articles
+                    .filter(({ file }) => file)
+                    .map(({ file }) => file.childMarkdownRemark)
                 : []
 
               // skip sections without articles
@@ -244,17 +246,19 @@ class CollectionTemplate extends React.Component {
                     </h3>
                   </a>
                   <ul sx={{ ml: 0, listStyleType: "none" }}>
-                    {articlesOfSection.map((article, index) => (
-                      <li key={article.fields.slug} sx={{ my: 0, py: 0 }}>
-                        <Card
-                          to={article.fields.slug}
-                          title={article.frontmatter.title}
-                          description={article.frontmatter.description}
-                          hasPredecessor={index > 0}
-                          hasSuccessor={index < articlesOfSection.length - 1}
-                        />
-                      </li>
-                    ))}
+                    {articlesOfSection.map((article, index) =>
+                      article ? (
+                        <li key={article.fields.slug} sx={{ my: 0, py: 0 }}>
+                          <Card
+                            to={article.fields.slug}
+                            title={article.frontmatter.title}
+                            description={article.frontmatter.description}
+                            hasPredecessor={index > 0}
+                            hasSuccessor={index < articlesOfSection.length - 1}
+                          />
+                        </li>
+                      ) : null
+                    )}
                   </ul>
                 </React.Fragment>
               )
@@ -292,11 +296,13 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
-        allCollectionsText
-        articlesInCollectionZeroText
-        articlesInCollectionOneText
-        articlesInCollectionTwoText
-        articlesInCollectionMultipleText
+        texts {
+          allCollectionsText
+          articlesInCollectionZeroText
+          articlesInCollectionOneText
+          articlesInCollectionTwoText
+          articlesInCollectionMultipleText
+        }
       }
     }
     collection: collectionsYaml(id: { eq: $collectionId }) {

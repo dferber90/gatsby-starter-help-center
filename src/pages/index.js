@@ -122,16 +122,16 @@ class HelpCenterIndex extends React.Component {
                     {(() => {
                       switch (articlesOfCollection.length) {
                         case 0:
-                          return this.props.data.site.siteMetadata
+                          return this.props.data.site.siteMetadata.texts
                             .articlesInCollectionZeroText
                         case 1:
-                          return this.props.data.site.siteMetadata
+                          return this.props.data.site.siteMetadata.texts
                             .articlesInCollectionOneText
                         case 2:
-                          return this.props.data.site.siteMetadata
+                          return this.props.data.site.siteMetadata.texts
                             .articlesInCollectionTwoText
                         default:
-                          return this.props.data.site.siteMetadata
+                          return this.props.data.site.siteMetadata.texts
                             .articlesInCollectionMultipleText
                       }
                     })()}
@@ -159,10 +159,12 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         description
-        articlesInCollectionZeroText
-        articlesInCollectionOneText
-        articlesInCollectionTwoText
-        articlesInCollectionMultipleText
+        texts {
+          articlesInCollectionZeroText
+          articlesInCollectionOneText
+          articlesInCollectionTwoText
+          articlesInCollectionMultipleText
+        }
       }
     }
     collections: allCollectionsYaml {

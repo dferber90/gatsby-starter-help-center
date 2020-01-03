@@ -1,6 +1,6 @@
 ---
 title: Giving back
-date: 2020-01-03T14:04:25.066Z
+date: 2020-01-03
 author: dferber
 modifiedDate: null
 description: "Things you can do to put a smile on our faces."

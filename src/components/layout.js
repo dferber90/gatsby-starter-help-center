@@ -20,8 +20,9 @@ function SearchInput(props) {
       site {
         siteMetadata {
           title
-          allCollectionsText
-          searchPlaceholderText
+          texts {
+            searchPlaceholderText
+          }
         }
       }
       articles: allMarkdownRemark {
@@ -106,7 +107,7 @@ function SearchInput(props) {
         value={text}
         autoFocus
         onChange={event => setText(event.target.value)}
-        placeholder={data.site.siteMetadata.searchPlaceholderText}
+        placeholder={data.site.siteMetadata.texts.searchPlaceholderText}
         autoComplete="off"
         sx={{
           backgroundColor: "rgba(255,255,255,0.2)",

@@ -34,7 +34,7 @@ class ArticleTemplate extends React.Component {
               },
             }}
           >
-            {this.props.data.site.siteMetadata.allCollectionsText}
+            {this.props.data.site.siteMetadata.texts.allCollectionsText}
           </Link>{" "}
           <span sx={{ color: "breadcrumbTextColor", fontSize: 1 }}>
             &rsaquo;
@@ -142,7 +142,7 @@ class ArticleTemplate extends React.Component {
                 >
                   <div>
                     <div>
-                      {this.props.data.site.siteMetadata.writtenByText}{" "}
+                      {this.props.data.site.siteMetadata.texts.writtenByText}{" "}
                       <span sx={{ color: "breadcrumbLinkTextColor" }}>
                         {article.frontmatter.author.name}
                       </span>
@@ -160,7 +160,10 @@ class ArticleTemplate extends React.Component {
                             this.props.data.site.siteMetadata.language
                           )}
                         >
-                          {this.props.data.site.siteMetadata.lastModifiedText}{" "}
+                          {
+                            this.props.data.site.siteMetadata.texts
+                              .lastModifiedText
+                          }{" "}
                           {new Date(
                             article.frontmatter.modifiedDate
                           ).toLocaleDateString(
@@ -181,7 +184,10 @@ class ArticleTemplate extends React.Component {
                             this.props.data.site.siteMetadata.language
                           )}
                         >
-                          {this.props.data.site.siteMetadata.publishedOnText}{" "}
+                          {
+                            this.props.data.site.siteMetadata.texts
+                              .publishedOnText
+                          }{" "}
                           {new Date(
                             article.frontmatter.date
                           ).toLocaleDateString(
@@ -213,10 +219,12 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
-        writtenByText
-        allCollectionsText
-        lastModifiedText
-        publishedOnText
+        texts {
+          writtenByText
+          allCollectionsText
+          lastModifiedText
+          publishedOnText
+        }
         language
       }
     }

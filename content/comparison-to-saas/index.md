@@ -1,6 +1,6 @@
 ---
 title: Comparison to paid, hosted help centers
-date: 2020-01-02T19:05:27.711Z
+date: 2020-01-02
 author: dferber
 modifiedDate: null
 description: "It's important to know what you're missing out on by going the free route."

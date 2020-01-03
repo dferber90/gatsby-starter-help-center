@@ -1,6 +1,6 @@
 ---
 title: Alternatives
-date: 2020-01-02T20:45:27.711Z
+date: 2020-01-02
 author: dferber
 modifiedDate: null
 description: "An overview of alternatives"

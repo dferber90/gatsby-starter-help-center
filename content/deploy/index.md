@@ -1,27 +1,27 @@
 ---
 title: Deploying your own help center
-date: 2020-01-02T19:05:27.711Z
+date: 2020-01-02
 author: dferber
 modifiedDate: null
 description: "Shows how to publish your help center to the internet for free."
 ---
 
-_This tutorial will show you how to set up your own help center. At the end, you will have the help center running locally. The next section then shows how to edit the content. And the final step shows how to deploy the help center to the internet, so that anyone can access it._
+_Great, you've made it to the last step! There are many ways to deploy your finished help center._
 
-### Install the gatsby-cli
+### Buliding your help center
 
-Install the [`gatsby-cli`](https://www.npmjs.com/package/gatsby-cli) if you don't have it already.
+To build your help center locally, you can run `npm run build`. This will compile your website into a folder called `public`. You can host that folder on any static hosting service you want.
 
-```shell
-npm install --global gatsby-cli
-```
+If you want to try it out locally, you can run `npm run serve` after `npm run build` completed. This will serve the `public` folder like a static hosting service would.
 
-If you don't have `npm` either, install [node.js](https://nodejs.org/en/) first.
+### Deploying with Netlify
 
-### Create a new Gatsby site
+If you want to have a really cool setup for your help center, you can connect Netlify and Github. You can set up a `git` repository for your help center. You can use a free private repository from [GitHub](https://github.com/) for it. Then you can connect Netlify to automatically build and publish your Gatsby site whenever you push changes to your git repository on GitHub.
 
-Create a new Gatsby site, using `gatsby-starter-help-center` as the template.
+Since this is something which is is not specific to `gatsby-starter-help-center` at all, I'll simply refer you to a Netlify tutorial from 2016 down below. You can roughly start at the "Prepping for Build" section of it. Note that:
 
-```shell
-gatsby new help-center https://www.github.com/dferber90/gatsby-starter-help-center
-```
+- You'll need to [Create a GitHub repository](https://help.github.com/en/github/getting-started-with-github/create-a-repo) before starting with the Netlify tutorial
+- The Netlify tutorial is calling their folder `gatsbynetlify`. Yours will be called `help-center` instead.
+- You'll already have a local git repository set up as it comes with the gatsby-starter, so you won't need to run `git init` as they do in the tutorial. However, you will need to add the remote with `git remote add origin ...` as they do in the tutorial.
+
+See: [Netlify tutorial from 2016](https://www.netlify.com/blog/2016/02/24/a-step-by-step-guide-gatsby-on-netlify/)

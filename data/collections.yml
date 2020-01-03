@@ -52,16 +52,23 @@
       title: Setup
       articles:
         - file: ../content/setup/index.md
+    - id: run-locally
+      title: Running locally
+      articles:
+        - file: ../content/run-locally/index.md
     - id: editing-content
       title: Editing content
       articles:
         - file: ../content/create-article/index.md
-        - file: ../content/edit-article/index.md
         - file: ../content/managing-collections/index.md
+        - file: ../content/managing-authors/index.md
+        - file: ../content/managing-dates/index.md
     - id: customizing
       title: Customizing
       articles:
-        - file: ../content/customizing/index.md
+        - file: ../content/customizing-locale/index.md
+        - file: ../content/customizing-icons/index.md
+        - file: ../content/customizing-theme/index.md
     - id: deploying
       title: Deploying
       articles:

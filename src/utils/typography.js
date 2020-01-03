@@ -10,8 +10,25 @@ moragaTheme.overrideThemeStyles = () => {
     ".gatsby-resp-image-wrapper": {
       marginTop: `1rem`,
     },
+    pre: {
+      borderLeft: "2pt solid #607d8b",
+      marginLeft: "12pt",
+      paddingLeft: "12pt",
+    },
     h2: {
       marginBottom: `calc(1.56rem / 2)`,
+    },
+    h3: {
+      marginBottom: `calc(1.56rem / 3)`,
+    },
+    h4: {
+      marginBottom: `calc(1.56rem / 3)`,
+    },
+    h5: {
+      marginBottom: `calc(1.56rem / 3)`,
+    },
+    h6: {
+      marginBottom: `calc(1.56rem / 3)`,
     },
   }
 }

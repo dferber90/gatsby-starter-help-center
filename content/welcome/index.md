@@ -1,6 +1,6 @@
 ---
 title: What is this?
-date: 2020-01-02T19:05:27.711Z
+date: 2020-01-02
 author: dferber
 modifiedDate: null
 description: "This project is a Gatsby Starter for a free self-hosted help center. You don't need to know how to code in order to set it up, and you can host it for free on any static site hosting service."
