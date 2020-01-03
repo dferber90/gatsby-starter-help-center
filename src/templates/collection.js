@@ -96,7 +96,7 @@ class CollectionTemplate extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title={collection.title} description={collection.description} />
-        <p sx={{ mt: 0, mb: 2, py: 0 }}>
+        <p sx={{ mt: 1, mb: 2, py: 0 }}>
           <Link
             to="/"
             sx={{
@@ -125,6 +125,7 @@ class CollectionTemplate extends React.Component {
             borderRadius: 2,
             px: [2, 4],
             py: 2,
+            mb: 6,
           }}
         >
           <div

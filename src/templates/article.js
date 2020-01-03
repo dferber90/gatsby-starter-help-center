@@ -22,7 +22,7 @@ class ArticleTemplate extends React.Component {
           title={article.frontmatter.title}
           description={article.frontmatter.description || article.excerpt}
         />
-        <p sx={{ mt: 0, mb: 2, py: 0 }}>
+        <p sx={{ mt: 1, mb: 2, py: 0 }}>
           <Link
             to="/"
             sx={{
@@ -86,7 +86,9 @@ class ArticleTemplate extends React.Component {
             borderStyle: "solid",
             borderColor: "paperBorderColor",
             borderRadius: 3,
-            padding: [3, 4],
+            px: [2, 4],
+            py: 2,
+            mb: 6,
             position: "relative",
             zIndex: "3",
             textDecoration: "none",
@@ -94,7 +96,6 @@ class ArticleTemplate extends React.Component {
             width: "100%",
             display: "block",
             outline: "none",
-            marginBottom: 3,
             boxShadow: "0 3px 8px 0 rgba(0,0,0,0.03)",
             transition:
               "border .15s linear, transform .15s linear, background-color .15s linear, box-shadow .15s linear, opacity .15s linear, transform .15s linear, box-shadow .15s linear",
