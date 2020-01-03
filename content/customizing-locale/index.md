@@ -18,3 +18,12 @@ This will set the language for SEO purposes (it will apply that language to `<ht
 ### Translating strings
 
 Next, you'll need to translate the default strings inside `siteMetadata.texts` in the same `gatsby-config.js` file.
+
+### Customize your help center
+
+Now that you know about locale, you can continue to learn how to customize your help center in any of these articles:
+
+- [Working with icons](/articles/customizing-icons)
+- [Changing the theme](/articles/customizing-theme)
+
+Or you can go straight to [Deploying the Help Center](/articles/deploy).

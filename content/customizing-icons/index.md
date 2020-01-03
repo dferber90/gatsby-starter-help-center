@@ -26,3 +26,12 @@ export { AiFillBulb, AiFillCheckSquare } from "react-icons/ai"
 ```
 
 _Note that `react-icons` is using imports from specific folders like `react-icons/fa` for Font Awesome icons, or `react-icons/ai` for Ant Design icons._
+
+### Customize your help center
+
+Now that you know about icons, you can continue to learn how to customize your help center in any of these articles:
+
+- [Changing the language](/articles/customizing-locale)
+- [Changing the theme](/articles/customizing-theme)
+
+Or you can go straight to [Deploying the Help Center](/articles/deploy).

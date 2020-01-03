@@ -25,3 +25,9 @@ Since this is something which is is not specific to `gatsby-starter-help-center`
 - You'll already have a local git repository set up as it comes with the gatsby-starter, so you won't need to run `git init` as they do in the tutorial. However, you will need to add the remote with `git remote add origin ...` as they do in the tutorial.
 
 See: [Netlify tutorial from 2016](https://www.netlify.com/blog/2016/02/24/a-step-by-step-guide-gatsby-on-netlify/)
+
+_Feel free to [open an issue](https://github.com/dferber90/gatsby-starter-help-center/issues) in case you need help._
+
+### Thanks
+
+Thank you for using this free help center. If this was useful to you, I'd be glad if you could [star the repository](https://github.com/dferber90/gatsby-starter-help-center). In case you deployed the help center and you're using it for one of your products, I'd love to hear about it. Please [open an issue](https://github.com/dferber90/gatsby-starter-help-center/issues) and post a link to the deployed help center. You can add some details or just leave a link there. Thanks!

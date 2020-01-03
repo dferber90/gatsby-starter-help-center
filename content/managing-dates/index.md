@@ -52,3 +52,13 @@ You'll have to remember to manually update this timestamp when you make (signifi
 ### Specifying date and time
 
 If you want to attach a time to your dates, you can do so by using strings like `2020-01-03T14:04:25.066Z`. The `Z` in the end means that this date is to be interpreted in the UTC time zone. You can use an offset to the UTC time zone with `2020-01-03T14:04:25.066+00:00`. Users can see the explicit time when they hover their cursor over the date.
+
+### Customize your help center
+
+Now that you know about dates, you can continue to learn how to customize your help center in any of these articles:
+
+- [Changing the language](/articles/customizing-locale)
+- [Working with icons](/articles/customizing-icons)
+- [Changing the theme](/articles/customizing-theme)
+
+Or you can go straight to [Deploying the Help Center](/articles/deploy).
