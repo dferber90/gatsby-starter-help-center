@@ -66,6 +66,7 @@
     - id: customizing
       title: Customizing
       articles:
+        - file: ../content/customizing-brand-logo/index.md
         - file: ../content/customizing-locale/index.md
         - file: ../content/customizing-icons/index.md
         - file: ../content/customizing-theme/index.md

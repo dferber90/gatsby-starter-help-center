@@ -31,6 +31,7 @@ _Note that `react-icons` is using imports from specific folders like `react-icon
 
 Now that you know about icons, you can continue to learn how to customize your help center in any of these articles:
 
+- [Adding your own logo](/articles/customizing-brand-logo)
 - [Changing the language](/articles/customizing-locale)
 - [Changing the theme](/articles/customizing-theme)
 

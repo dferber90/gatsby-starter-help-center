@@ -23,6 +23,7 @@ Next, you'll need to translate the default strings inside `siteMetadata.texts` i
 
 Now that you know about locale, you can continue to learn how to customize your help center in any of these articles:
 
+- [Adding your own logo](/articles/customizing-brand-logo)
 - [Working with icons](/articles/customizing-icons)
 - [Changing the theme](/articles/customizing-theme)
 

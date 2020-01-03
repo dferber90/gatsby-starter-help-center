@@ -20,6 +20,7 @@ Edit `src/gatsby-plugin-theme-ui/index.js` if you want to adapt the colors, spac
 
 Now that you know about modifying the theme, you can continue to learn how to customize your help center in any of these articles:
 
+- [Adding your own logo](/articles/customizing-brand-logo)
 - [Changing the language](/articles/customizing-locale)
 - [Working with icons](/articles/customizing-icons)
 

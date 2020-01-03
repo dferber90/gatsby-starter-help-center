@@ -57,6 +57,7 @@ If you want to attach a time to your dates, you can do so by using strings like 
 
 Now that you know about dates, you can continue to learn how to customize your help center in any of these articles:
 
+- [Adding your own logo](/articles/customizing-brand-logo)
 - [Changing the language](/articles/customizing-locale)
 - [Working with icons](/articles/customizing-icons)
 - [Changing the theme](/articles/customizing-theme)
