@@ -2,6 +2,10 @@
 
 Kick off your project with this help center boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
 
+![preview](./preview.png)
+
+_This README is a brief overview only. You can find the **full documentation** at [help.dferber.de](https://help.dferber.de/). That documentation site was built with this help center. Visit it to see what the help center looks like in production._
+
 ## 🚀 Quick start
 
 1.  **Clone the starter.**
@@ -9,8 +13,8 @@ Kick off your project with this help center boilerplate. This starter ships with
     Use the Gatsby CLI to create a new site, specifying the help center starter.
 
     ```shell
-    # create a new Gatsby site using the blog starter
-    gatsby new help-center https://github.com/dferber90/gatsby-starter-help-center
+    # create a new Gatsby site using the help center starter
+    gatsby new help-center dferber90/gatsby-starter-help-center
     ```
 
 1.  **Start developing.**
@@ -45,20 +49,21 @@ A quick look at the most important files and directories you'll need to edit.
     | | | |____some-image.png
     | | | |____index.md
     | |____assets
-    | | |____logo-dark-big.png
+    | | |____favicon.png
     |____data
     | |____mappings
     | | |____collections.yml
     | | |____authors.yml
     | | |____avatars
-    | | | |____jferber.png
     | | | |____dferber.png
+    | | | |____amanda.jpg
+    | | | |____bert.jpg
 
 1.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
 
-2.  **`content/articles`**: This file the folder where you'll place all your articles.
+2.  **`content/articles`**: This is the folder where you'll place your articles.
 
-3.  **`data/mappings/collections.yml`**: This file defines the collections of your help center. Each article will belong to one collection. A collection consists of many articles. A collection can have different sections which the articles may belong to.
+3.  **`data/mappings/collections.yml`**: This file defines the collections of your help center. Each article will belong to one collection. A collection consists of many articles. A collection can have different sections which its articles may belong to.
 
 4.  **`data/mappings/authors.yml`**: This file is where you'll list your authors. Every author needs an id, a name and an avatar. You can add an author to each article.
 
@@ -74,4 +79,4 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 ## 💫 Example
 
-Check out [this help center](https://help.workoutscheduler.de/), which was built with this starter.
+Check out [this help center](https://help.dferber.de/), which was built with this starter.
