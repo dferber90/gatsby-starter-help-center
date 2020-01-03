@@ -7,27 +7,27 @@
 #   icon: "FaBook"
 #   # These are the "pinned" articles at the top of a collection
 #   articles:
-#     # All articles must be in the "../../content/articles" folder
-#     - file: ../../content/articles/first-article/index.md
-#     - file: ../../content/articles/second-article/index.md
+#     # All articles must be in the "../content" folder
+#     - file: ../content/first-article/index.md
+#     - file: ../content/second-article/index.md
 #   sections:
 #     - id: used-as-the-hashtag-of-the-land-animals-section
 #       title: "Land animals"
 #       articles:
-#         - file: ../../content/articles/lion/index.md
-#         - file: ../../content/articles/cat/index.md
+#         - file: ../content/lion/index.md
+#         - file: ../content/cat/index.md
 #     - id: used-as-the-hashtag-of-the-sea-animals-section
 #       title: "Sea animals"
 #       articles:
-#         - file: ../../content/articles/dolphins/index.md
-#         - file: ../../content/articles/whales/index.md
+#         - file: ../content/dolphins/index.md
+#         - file: ../content/whales/index.md
 
 - id: introduction
   title: Introduction
   description: Brief overview of the free help center
   icon: "FaRegHandPeace"
   articles:
-    - file: ../../content/articles/welcome/index.md
+    - file: ../content/welcome/index.md
 
 - id: features-and-nonfeatures
   title: Features and Non-Features
@@ -37,11 +37,11 @@
     - id: features
       title: Features
       articles:
-        - file: ../../content/articles/features/index.md
+        - file: ../content/features/index.md
     - id: nonfeatures
       title: Non-Features
       articles:
-        - file: ../../content/articles/comparison-to-saas/index.md
+        - file: ../content/comparison-to-saas/index.md
 
 - id: usage
   title: Usage
@@ -51,25 +51,25 @@
     - id: setup
       title: Setup
       articles:
-        - file: ../../content/articles/setup/index.md
+        - file: ../content/setup/index.md
     - id: editing-content
       title: Editing content
       articles:
-        - file: ../../content/articles/create-article/index.md
-        - file: ../../content/articles/edit-article/index.md
-        - file: ../../content/articles/managing-collections/index.md
+        - file: ../content/create-article/index.md
+        - file: ../content/edit-article/index.md
+        - file: ../content/managing-collections/index.md
     - id: customizing
       title: Customizing
       articles:
-        - file: ../../content/articles/customizing/index.md
+        - file: ../content/customizing/index.md
     - id: deploying
       title: Deploying
       articles:
-        - file: ../../content/articles/deploy/index.md
+        - file: ../content/deploy/index.md
 
 - id: giving-back
   title: Giving back
   description: 'Options in case you want to say "thank you"'
   icon: "FaPeopleCarry"
   articles:
-    - file: ../../content/articles/giving-back/index.md
+    - file: ../content/giving-back/index.md

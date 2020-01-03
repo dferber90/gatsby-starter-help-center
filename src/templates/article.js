@@ -39,26 +39,10 @@ class ArticleTemplate extends React.Component {
           <span sx={{ color: "breadcrumbTextColor", fontSize: 1 }}>
             &rsaquo;
           </span>{" "}
-          <Link
-            to={collection.fields.slug}
-            sx={{
-              color: "breadcrumbLinkTextColor",
-              boxShadow: "none",
-              fontSize: 1,
-              "&:hover": {
-                color: "breadcrumbHoverLinkTextColor",
-              },
-            }}
-          >
-            {collection.title}
-          </Link>{" "}
-          <span sx={{ color: "breadcrumbTextColor", fontSize: 1 }}>
-            &rsaquo;
-          </span>{" "}
-          {section && (
-            <>
+          {collection && (
+            <React.Fragment>
               <Link
-                to={collection.fields.slug + "#" + slug(section.id)}
+                to={collection.fields.slug}
                 sx={{
                   color: "breadcrumbLinkTextColor",
                   boxShadow: "none",
@@ -68,12 +52,32 @@ class ArticleTemplate extends React.Component {
                   },
                 }}
               >
-                {section.title}
+                {collection.title}
               </Link>{" "}
               <span sx={{ color: "breadcrumbTextColor", fontSize: 1 }}>
                 &rsaquo;
               </span>{" "}
-            </>
+              {section && (
+                <>
+                  <Link
+                    to={collection.fields.slug + "#" + slug(section.id)}
+                    sx={{
+                      color: "breadcrumbLinkTextColor",
+                      boxShadow: "none",
+                      fontSize: 1,
+                      "&:hover": {
+                        color: "breadcrumbHoverLinkTextColor",
+                      },
+                    }}
+                  >
+                    {section.title}
+                  </Link>{" "}
+                  <span sx={{ color: "breadcrumbTextColor", fontSize: 1 }}>
+                    &rsaquo;
+                  </span>{" "}
+                </>
+              )}
+            </React.Fragment>
           )}
           <span sx={{ color: "breadcrumbTextColor", fontSize: 1 }}>
             {article.frontmatter.title}

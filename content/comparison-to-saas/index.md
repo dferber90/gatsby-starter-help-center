@@ -69,3 +69,7 @@ _If there is enough interest in the free help center, then we'll convert it to a
 ### No support
 
 As the free help center is a spare-time open-source project, there is no guarantee for support. Lots of effort is put into writing comprehensive documentation instead.
+
+## Alternatives
+
+You can find a listing of alternatives to this free help center [here](/articles/alternatives).
