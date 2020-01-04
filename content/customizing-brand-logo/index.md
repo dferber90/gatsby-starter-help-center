@@ -10,7 +10,7 @@ The help center comes with a logo out of the box. You'll likely want to use your
 
 ### Changing the SVG file
 
-Edit `src/components/logo.js` and place your SVG logo in there. You'll need to convert it to a React component. You can use the current logo as an example.
+Edit `src/components/logo.js` and place your SVG logo in there. You'll need to convert it to a React component. You can use [svg2jsx.com](https://svg2jsx.com/) to convert an SVG to a React component. Use the current logo as an example.
 
 Note that the SVG logo needs to accept `props.size` and use that value as its `width` and `height`. The colors need to be set to `props.color`. These things are done so that your logo can appear in the header and the footer and look slightly different in both.
 
