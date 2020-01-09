@@ -158,6 +158,9 @@ function SearchInput(props) {
       >
         {combobox.isOpen &&
           inputItems.map((node, index) => {
+            // skip drafts and "hidden" articles (ones without a collection)
+            if (!node.fields.collection) return null
+
             const icon = jsx(
               icons[node.fields.collection.icon],
               { sx: { color: "iconColor" }, size: "2rem" },
