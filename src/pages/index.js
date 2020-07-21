@@ -11,7 +11,7 @@ function concatArticles(node) {
   return [
     ...(Array.isArray(node.articles) ? node.articles : []),
     ...(Array.isArray(node.sections)
-      ? node.sections.flatMap(section =>
+      ? node.sections.flatMap((section) =>
           Array.isArray(section.articles) ? section.articles : []
         )
       : []),

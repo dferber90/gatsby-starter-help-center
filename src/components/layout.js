@@ -73,9 +73,9 @@ function SearchInput(props) {
   const combobox = useCombobox({
     items: inputItems,
     onInputValueChange: ({ inputValue }) => {
-      setInputItems(fuse.search(inputValue).map(node => node.item))
+      setInputItems(fuse.search(inputValue).map((node) => node.item))
     },
-    itemToString: node => (node ? node.frontmatter.title : ""),
+    itemToString: (node) => (node ? node.frontmatter.title : ""),
     onSelectedItemChange: ({ selectedItem }) => {
       navigate(selectedItem.fields.slug)
     },
@@ -105,7 +105,7 @@ function SearchInput(props) {
         type="text"
         value={text}
         autoFocus
-        onChange={event => setText(event.target.value)}
+        onChange={(event) => setText(event.target.value)}
         placeholder={data.site.siteMetadata.texts.searchPlaceholderText}
         autoComplete="off"
         sx={{

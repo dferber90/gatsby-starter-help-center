@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 
-const Logo = props => (
+const Logo = (props) => (
   <svg
     sx={{
       height: props.size,

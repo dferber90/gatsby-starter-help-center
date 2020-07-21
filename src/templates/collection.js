@@ -12,7 +12,7 @@ function concatArticles(node) {
   return [
     ...(Array.isArray(node.articles) ? node.articles : []),
     ...(Array.isArray(node.sections)
-      ? node.sections.flatMap(section =>
+      ? node.sections.flatMap((section) =>
           Array.isArray(section.articles) ? section.articles : []
         )
       : []),
@@ -220,7 +220,7 @@ class CollectionTemplate extends React.Component {
             })}
           </ul>
           {Array.isArray(collection.sections) &&
-            collection.sections.map(section => {
+            collection.sections.map((section) => {
               const articlesOfSection = Array.isArray(section.articles)
                 ? section.articles
                     .filter(({ file }) => file)

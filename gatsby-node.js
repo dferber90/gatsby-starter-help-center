@@ -52,7 +52,7 @@ exports.createPages = async ({ graphql, actions }) => {
   // Create article and collection pages.
   const items = result.data.allMarkdownRemark.edges
   const articles = items.filter(
-    item => item.node.parent.sourceInstanceName === "articles"
+    (item) => item.node.parent.sourceInstanceName === "articles"
   )
   const collections = result.data.allCollectionsYaml.edges
 
@@ -115,7 +115,7 @@ function articlesContainSpecificArticle(articles, articlePath) {
     Array.isArray(articles) &&
     articles.some(
       // compare articles by absolute file path
-      article => path.resolve("data", article.file) === articlePath
+      (article) => path.resolve("data", article.file) === articlePath
     )
   )
 }
@@ -133,7 +133,7 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
             const rootNode = context.nodeModel.findRootNodeAncestor(source)
             const collection = context.nodeModel
               .getAllNodes({ type: "CollectionsYaml" })
-              .find(collection => {
+              .find((collection) => {
                 // check fixed articles
                 if (
                   articlesContainSpecificArticle(
@@ -146,7 +146,7 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
                 // check articles of sections
                 if (
                   Array.isArray(collection.sections) &&
-                  collection.sections.some(section => {
+                  collection.sections.some((section) => {
                     return articlesContainSpecificArticle(
                       section.articles,
                       rootNode.absolutePath
@@ -168,10 +168,10 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
             // determine the section of the article based on the file path
             const sections = context.nodeModel
               .getAllNodes({ type: "CollectionsYaml" })
-              .filter(collection => Array.isArray(collection.sections))
-              .flatMap(collection => collection.sections)
+              .filter((collection) => Array.isArray(collection.sections))
+              .flatMap((collection) => collection.sections)
 
-            return sections.find(section =>
+            return sections.find((section) =>
               articlesContainSpecificArticle(
                 section.articles,
                 rootNode.absolutePath
