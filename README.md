@@ -85,3 +85,5 @@ Projects built with `gatsby-starter-help-center`:
 - [help.simplimail.co](https://help.simplimail.co/)
 - [support.bikecomparator.com](https://support.bikecomparator.com/)
 - [world-help.netlify.app](https://world-help.netlify.app/)
+
+*...you can open a PR and add your project to this list once you're up and running*
