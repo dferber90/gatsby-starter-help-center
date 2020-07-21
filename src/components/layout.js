@@ -58,7 +58,6 @@ function SearchInput(props) {
         threshold: 0.6,
         location: 0,
         distance: 100,
-        maxPatternLength: 32,
         minMatchCharLength: 1,
         keys: [
           "frontmatter.title",
@@ -74,7 +73,7 @@ function SearchInput(props) {
   const combobox = useCombobox({
     items: inputItems,
     onInputValueChange: ({ inputValue }) => {
-      setInputItems(fuse.search(inputValue))
+      setInputItems(fuse.search(inputValue).map(node => node.item))
     },
     itemToString: node => (node ? node.frontmatter.title : ""),
     onSelectedItemChange: ({ selectedItem }) => {
@@ -159,7 +158,7 @@ function SearchInput(props) {
         {combobox.isOpen &&
           inputItems.map((node, index) => {
             // skip drafts and "hidden" articles (ones without a collection)
-            if (!node.fields.collection) return null
+            if (!node.fields || !node.fields.collection) return null
 
             const icon = jsx(
               icons[node.fields.collection.icon],
