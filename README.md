@@ -75,6 +75,13 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 - **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
 
-## 💫 Example
+## 💫 Examples
 
-Check out [this help center](https://help.dferber.de/), which was built with this starter.
+Projects built with `gatsby-starter-help-center`:
+
+- This repositorys docs itself at [help.dferber.de](https://help.dferber.de/)
+- [katakata.my](https://katakata.my/)
+- [help.tugify.com](https://help.tugify.com/)
+- [help.simplimail.co](https://help.simplimail.co/)
+- [support.bikecomparator.com](https://support.bikecomparator.com/)
+- [world-help.netlify.app](https://world-help.netlify.app/)
