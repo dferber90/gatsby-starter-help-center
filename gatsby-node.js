@@ -115,7 +115,8 @@ function articlesContainSpecificArticle(articles, articlePath) {
     Array.isArray(articles) &&
     articles.some(
       // compare articles by absolute file path
-      (article) => path.resolve("data", article.file) === articlePath
+      // use path.normalize for windows paths
+      (article) => path.normalize(path.resolve("data", article.file)) === path.normalize(articlePath)
     )
   )
 }
