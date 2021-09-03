@@ -58,9 +58,6 @@ typings/
 .cache/
 public
 
-# Netlify files
-.netlify/
-
 # Mac files
 .DS_Store
 

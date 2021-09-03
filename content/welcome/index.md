@@ -28,7 +28,7 @@ You can use [`gatsby-starter-help-center`](https://www.github.com/dferber90/gats
 
 ## How to use this project?
 
-You'll need to create a new [Gatsby Starter](https://www.gatsbyjs.org/docs/starters/) based on [`gatsby-starter-help-center`](https://www.github.com/dferber90/gatsby-starter-help-center). Then you'll fill the starter with your own content by creating and editing [Markdown](https://en.wikipedia.org/wiki/Markdown) files. The collections are managed through a [YAML](https://en.wikipedia.org/wiki/YAML) file. Finally you'll need to host the generated static site. There are free solutions like [Netlify](https://www.netlify.com/) for this.
+You'll need to create a new [Gatsby Starter](https://www.gatsbyjs.org/docs/starters/) based on [`gatsby-starter-help-center`](https://www.github.com/dferber90/gatsby-starter-help-center). Then you'll fill the starter with your own content by creating and editing [Markdown](https://en.wikipedia.org/wiki/Markdown) files. The collections are managed through a [YAML](https://en.wikipedia.org/wiki/YAML) file. Finally you'll need to host the generated static site. There are free solutions like [Vercel](https://vercel.com//) for this.
 
 _The full setup instructions are written down in "[Setup](/articles/setup)"._
 
