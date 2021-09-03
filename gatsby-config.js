@@ -27,7 +27,6 @@ module.exports = {
     "gatsby-plugin-theme-ui",
     `gatsby-transformer-yaml`,
     `gatsby-plugin-sitemap`,
-    "gatsby-plugin-simple-analytics",
     {
       resolve: `gatsby-source-filesystem`,
       options: {
