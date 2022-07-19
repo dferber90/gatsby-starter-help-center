@@ -6,6 +6,8 @@ Kick off your project with this help center boilerplate. This starter ships with
 
 _This README is a brief overview only. You can find the **full documentation** at [help.dferber.de](https://help.dferber.de/). That documentation site was built with this help center. Visit it to see what the help center looks like in production._
 
+> This project was archived in 2022. You can check out [helpkit.so](https://www.helpkit.so/?ref=dferber90) or any of the other [alternative solutions](https://help.dferber.de/articles/alternatives/).
+
 ## 🚀 Quick start
 
 1.  **Clone the starter.**
