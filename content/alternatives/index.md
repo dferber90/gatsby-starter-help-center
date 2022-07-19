@@ -10,7 +10,7 @@ This is a list of alternative help center services.
 
 ## Recommended
 
-- [helpkit.so](https://www.helpkit.so/) ($19 per month)
+- [helpkit.so](https://www.helpkit.so/?ref=dferber90) ($19 per month)
 
 HelpKit turns your Notion docs into a hosted self-service Knowledge Base for your customers – no code required.
 
